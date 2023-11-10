@@ -1,0 +1,7 @@
+<!-- pdfuploader/templates/pdfuploader/pdf_list.html -->
+<h2>PDF List</h2>
+<ul>
+    {% for pdf_file in pdf_files %}
+        <li>{{ pdf_file.file.name }} - {{ pdf_file.uploaded_at }}</li>
+    {% endfor %}
+</ul>
